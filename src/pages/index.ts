@@ -1,0 +1,5 @@
+export {About} from './About'
+export {Work} from './Work'
+export {Blog} from './Blog'
+export {Contact} from './Contact'
+export {Services} from './Services'

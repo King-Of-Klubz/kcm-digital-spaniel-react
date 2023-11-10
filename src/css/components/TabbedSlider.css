@@ -1,0 +1,52 @@
+.tabbed-slider {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .tabs {
+    display: flex;
+    flex-wrap: wrap; /* Allow tabs to wrap to the next line on smaller screens */
+  }
+  
+  .tab {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #eee;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin: 5px;
+    user-select: none;
+  }
+  
+  .tab.active {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .content {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+  }
+  
+  .slider {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .slide {
+    display: none;
+    padding: 10px;
+  }
+  
+  .slide.active {
+    display: block;
+  }
+  
+  @media (max-width: 768px) {
+    .tab {
+      width: 100%; /* Make tabs take up the full width on smaller screens */
+      text-align: center; /* Center-align tab labels */
+    }
+  }
+  

@@ -1,0 +1,30 @@
+.columns {
+    display: flex;
+    flex-direction: row;
+}
+
+.columns>* {
+    width: 100%;
+}
+
+.title-col {
+    display: block;
+    margin: auto;
+}
+
+.image-col {
+    display: none;
+}
+
+/* tablet breakpoint */
+@media (min-width:768px) {
+    .columns>* {
+        width: 50%;
+    }
+
+    .image-col {
+        display: block;
+        width: 960px;
+        height: 1081px;
+    }
+}

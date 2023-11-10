@@ -1,0 +1,1 @@
+type LocalStorageKey = 'projects' | 'testimonials';
