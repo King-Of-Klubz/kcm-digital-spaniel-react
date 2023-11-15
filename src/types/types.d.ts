@@ -1,1 +1,1 @@
-type LocalStorageKey = 'projects' | 'testimonials';
+type LocalStorageKey = 'testimonials'| 'projects';

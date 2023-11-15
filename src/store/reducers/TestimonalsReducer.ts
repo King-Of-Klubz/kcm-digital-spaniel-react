@@ -1,32 +1,29 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice } from "@reduxjs/toolkit";
 import { AppDispatch, RootState } from "@/store";
 import { localStorage, testimonialApi } from "@/lib";
 
 const state: testimonialsReducerState = {
-    testimonials: null,
-}
+  testimonials: null,
+};
 
 const testimonialsSlice = createSlice({
-    name: 'testimonials',
-    initialState: localStorage.getItem('testimonials', state),
-    reducers: {
-        setTestimonials: (state, action) => {
-            state.projects = action.payload;
-            localStorage.setItem('testimonials', state);
-        },
+  name: "testimonials",
+  initialState: localStorage.getItem("testimonials", state),
+  reducers: {
+    setTestimonials: (state, action) => {
+      state.testimonials = action.payload;
+      localStorage.setItem("testimonials", state);
     },
-})
+  },
+});
 
-export const { setTestimonials} = testimonialsSlice.actions;
-export const selectTestimonials = (state: RootState) => state.testimonials;
+export const { setTestimonials } = testimonialsSlice.actions;
+export const selectTestimonials = (state: RootState) => state.testimonials.testimonials;
 
 export const fetchTestimonials = () => async (dispatch: AppDispatch) => {
-    await testimonialApi.get<testimonialsResponse>('/api').then(res => {
-        dispatch(setTestimonials(res.data))
-    }).catch(e => {
-        console.log(e);
-        throw new Error(e);
-    });
-}
+  await fetch("https://testimonialapi.vercel.app/api")
+    .then((res) => res.json())
+    .then((data) => dispatch(setTestimonials(data)));
+};
 
 export default testimonialsSlice.reducer;

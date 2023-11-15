@@ -2,7 +2,7 @@ interface Project {
     id: number
     title: string
     discription: string
-    filter: string
+    topic: string
     type: string
     url: string
 }
@@ -14,17 +14,14 @@ interface Filter {
 
 interface ProjectsProps {
     projects: Project[]
-    filters: Filter[]
 }
 
 interface projectsReducerState {
     projects: Project[] | null
-    filter: Filter | null
-    filters: Filter[] | null
 }
 
 interface testimonialsReducerState {
-    testimonials: [] | null
+    testimonials: testimonial[] | null
 }
 interface testimonial {
     id: number

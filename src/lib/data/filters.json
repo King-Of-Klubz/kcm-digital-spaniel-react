@@ -1,0 +1,31 @@
+[
+  {
+    "id": 1,
+    "title": "All",
+    "slug": "all",
+    "createdAt": "2012-03-31T18:57:10.696Z",
+    "updatedAt": "2012-04-01T18:57:10.696Z"
+  },
+
+  {
+    "id": 2,
+    "title": "Branding",
+    "slug": "branding",
+    "createdAt": "2012-03-31T18:57:10.696Z",
+    "updatedAt": "2012-04-01T18:57:10.696Z"
+  },
+  {
+    "id": 3,
+    "title": "Web design",
+    "slug": "web-design",
+    "createdAt": "2014-03-09T01:27:33.839Z",
+    "updatedAt": "2014-03-10T01:27:33.839Z"
+  },
+  {
+    "id": 4,
+    "title": "Digital Marketing",
+    "slug": "digital-marketing",
+    "createdAt": "2013-11-01T02:31:30.349Z",
+    "updatedAt": "2013-11-02T02:31:30.349Z"
+  }
+]
