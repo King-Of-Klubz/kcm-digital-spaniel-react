@@ -1,52 +1,77 @@
 .tabbed-slider {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .tabs {
-    display: flex;
-    flex-wrap: wrap; /* Allow tabs to wrap to the next line on smaller screens */
-  }
-  
+  display: flex;
+  flex-direction: column;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap; /* Allow tabs to wrap to the next line on smaller screens */
+}
+
+.tab {
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #eee;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin: 5px;
+  user-select: none;
+}
+
+.tab.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.content {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 20px;
+}
+
+.slider {
+  display: flex;
+  flex-direction: row;
+}
+
+.slide {
+  position: relative;
+  text-align: center;
+  color: white;
+  padding: 5px;
+}
+
+.single img {
+  border-radius: 10px;
+  max-width: 100%;
+}
+.single img:hover {
+  transform: scale(1.03);
+}
+.centered {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(29, 106, 154, 0.72);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  border-radius: 10px;
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+.single:hover .centered{
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
   .tab {
-    cursor: pointer;
-    padding: 10px 20px;
-    background-color: #eee;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    margin: 5px;
-    user-select: none;
+    width: 100%; /* Make tabs take up the full width on smaller screens */
+    text-align: center; /* Center-align tab labels */
   }
-  
-  .tab.active {
-    background-color: #007bff;
-    color: white;
-  }
-  
-  .content {
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 20px;
-  }
-  
-  .slider {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .slide {
-    display: none;
-    padding: 10px;
-  }
-  
-  .slide.active {
-    display: block;
-  }
-  
-  @media (max-width: 768px) {
-    .tab {
-      width: 100%; /* Make tabs take up the full width on smaller screens */
-      text-align: center; /* Center-align tab labels */
-    }
-  }
-  
+}

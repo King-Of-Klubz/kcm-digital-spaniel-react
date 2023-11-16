@@ -22,8 +22,14 @@ export const TabbedSlider = () => {
         <div className="slider">
           {filteredProjects &&
             filteredProjects.map((project: Project) => (
-              <div className={"slide active"} key={project.id}>
-                {project.title}
+              <div className="slide">
+                <div className={`single ${project.type}`} key={project.id}>
+                  <img src={project.url} alt={""} />
+                  <div className="centered">
+                    <div>{project.title}</div>
+                    <div>{project.discription}</div>
+                  </div>
+                </div>
               </div>
             ))}
         </div>

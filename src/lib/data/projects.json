@@ -5,7 +5,7 @@
       "discription": "Aute sit ipsum et magna aliquip magna fugiat sint duis labore ullamco.",
       "topic": "branding",
       "type": "portrait",
-      "url": "src",
+      "url": "/src/assets/rider01.png",
       "createdAt": "2013-06-30T11:04:51.788Z",
       "updatedAt": "2013-07-01T11:04:51.788Z"
     },
@@ -15,7 +15,7 @@
       "discription": "Incididunt pariatur mollit voluptate incididunt enim occaecat.",
       "topic": "branding",
       "type": "landscape",
-      "url": "src",
+      "url": "/src/assets/newspaper.png",
       "createdAt": "2012-03-23T11:20:52.662Z",
       "updatedAt": "2012-03-24T11:20:52.662Z"
     },
@@ -24,8 +24,8 @@
       "title": "est id ex",
       "discription": "Laboris voluptate nisi minim consequat nisi fugiat magna.",
       "topic": "marketing",
-      "type": "landscape",
-      "url": "src",
+      "type": "portrait",
+      "url": "/src/assets/whellies01.png",
       "createdAt": "2012-05-27T09:49:53.450Z",
       "updatedAt": "2012-05-28T09:49:53.450Z"
     },
@@ -34,8 +34,8 @@
       "title": "culpa adipisicing culpa",
       "discription": "Mollit voluptate nostrud enim nulla nulla ea.",
       "topic": "design",
-      "type": "landscape",
-      "url": "src",
+      "type": "portrait",
+      "url": "/src/assets/makerek.png",
       "createdAt": "2011-01-20T19:29:22.631Z",
       "updatedAt": "2011-01-21T19:29:22.631Z"
     },
@@ -45,7 +45,7 @@
       "discription": "Ut ipsum laboris ea mollit pariatur.",
       "topic": "branding",
       "type": "portrait",
-      "url": "src",
+      "url": "/src/assets/whellies01.png",
       "createdAt": "2012-11-18T10:06:34.498Z",
       "updatedAt": "2012-11-19T10:06:34.498Z"
     }
