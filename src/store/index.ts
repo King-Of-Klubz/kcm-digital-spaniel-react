@@ -1,14 +1,12 @@
 import {configureStore} from '@reduxjs/toolkit'
 import {
-    testimonialsReducer,
-    projectsReducer
+    testimonialsReducer
 } from "@/store/reducers";
 
 
 export const store = configureStore({
     reducer: {
         testimonials: testimonialsReducer,
-        projects: projectsReducer
     }
 });
 

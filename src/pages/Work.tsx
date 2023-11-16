@@ -1,28 +1,19 @@
-import React, { useEffect, useState } from 'react';
-import { TabbedSlider } from '../components';
-import { useAppDispatch, useAppSelector } from '@/hooks';
-import { shallowEqual } from 'react-redux';
-import { fetchProjects, selectProjects } from '@/store/reducers/ProjectsReducer';
-
+import { ProjectsProvider } from "@/lib/contexts/projectsContext";
+import { TabbedSlider } from "../components";
 export const Work = () => {
-
-  const dispatch = useAppDispatch();
-  const projects = useAppSelector(selectProjects, shallowEqual);
-  useEffect(() => {
-    dispatch(fetchProjects());
-  }, [dispatch]);
-
   return (
     <>
-      <div className='container'>
-        <div className='title'>
+      <div className="container">
+        <div className="title">
           <h1>Some of our</h1>
           <h2>recent projects</h2>
         </div>
-        <div>
-          <TabbedSlider projects={projects} />
-        </div>
+        <ProjectsProvider>
+          <div>
+          <TabbedSlider />
+          </div>
+        </ProjectsProvider>
       </div>
     </>
   );
-}
+};

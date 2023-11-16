@@ -4,7 +4,6 @@ import {forEach} from "lodash";
 class LocalStorage {
 
     private keys: LocalStorageKey[] = [
-        'projects',
         'testimonials'
     ];
 

@@ -12,14 +12,6 @@ interface Filter {
     slug: string
 }
 
-interface ProjectsProps {
-    projects: Project[]
-}
-
-interface projectsReducerState {
-    projects: Project[] | null
-}
-
 interface testimonialsReducerState {
     testimonials: testimonial[] | null
 }
@@ -33,3 +25,9 @@ interface testimonial {
     rating: number
     audio: string
 }
+type ProjectsContextType = {
+    filteredProjects: Project[] | null;
+    filters: Filter[];
+    activeTab: string;
+    handleSelectedFilter: (selectTab: Filter) => void;
+  };
