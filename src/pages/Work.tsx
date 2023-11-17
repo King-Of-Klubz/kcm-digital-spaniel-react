@@ -1,4 +1,4 @@
-import { ProjectsProvider } from "@/lib/contexts/projectsContext";
+import { ProjectsProvider } from "@/contexts/projectsContext";
 import { TabbedSlider } from "../components";
 export const Work = () => {
   return (
@@ -9,9 +9,7 @@ export const Work = () => {
           <h2>recent projects</h2>
         </div>
         <ProjectsProvider>
-          <div>
           <TabbedSlider />
-          </div>
         </ProjectsProvider>
       </div>
     </>

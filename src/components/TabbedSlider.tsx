@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import "../css/components/TabbedSlider.css";
-import { ProjectsContext } from "@/lib/contexts/projectsContext";
+import { ProjectsContext } from "@/contexts/projectsContext";
 export const TabbedSlider = () => {
   const { activeTab, handleSelectedFilter, filteredProjects, filters } =
     useContext(ProjectsContext) as ProjectsContextType;

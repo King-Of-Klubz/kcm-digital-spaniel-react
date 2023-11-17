@@ -1,6 +1,6 @@
 import { createContext, useState } from "react";
-import filterData from "@/lib/data/filters.json";
-import projectsData from "@/lib/data/projects.json";
+import filterData from "@/data/filters.json";
+import projectsData from "@/data/projects.json";
 
 export const ProjectsContext = createContext<ProjectsContextType | null>(null);
 // @ts-ignore
